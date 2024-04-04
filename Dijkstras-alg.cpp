@@ -74,7 +74,7 @@ int main() {
 	while (end != begin_index) {
 		for (int i = 0; i < SIZE; i++) {
 			if (a[i][end] != 0) {
-				int temp = weight - a[i][end];
+				temp = weight - a[i][end];
 				if (temp == d[i]) {
 					
 					weight = temp;
@@ -94,7 +94,7 @@ int main() {
 		len++;
 		int j = i;
 		while (j != begin_index) {
-			for (int k = 0; k < SIZE; k++) {
+			for (k = 0; k < SIZE; k++) {
 				if (a[j][k] != 0 && d[j] == d[k] + a[j][k]) {
 					path[len] = k + 1;
 					len++;
@@ -103,7 +103,7 @@ int main() {
 				}
 			}
 		}
-		for (int k = len - 1; k >= 0; k--) {
+		for (k = len - 1; k >= 0; k--) {
 			cout << path[k] << " ";
 		}
 		cout << endl;
