@@ -1,0 +1,1 @@
+This project is a realization of Dijkstra's algorithm to find the shortest paths in a weighted graph. It calculates the shortest distance from a starting vertex to all other vertices and then determines the shortest paths from the starting vertex to each vertex.
